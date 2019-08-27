@@ -3,8 +3,8 @@ const bodyParser = require("body-parser");
 const app = express();
 const port = 3000;
 
-// SETUP LISTENER & BODYPARSER
-app.listen(port, function () {
+// SETUP LISTENER & BODY-PARSER
+app.listen(process.env.PORT || port, function () {
     console.log("Server listening on port " + port);
 });
 app.use(bodyParser.urlencoded({ extended: true }));
