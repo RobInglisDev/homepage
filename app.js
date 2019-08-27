@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 // SETUP MONGOOSE
-mongoose.connect('mongodb://localhost:27017/userDB', { useNewUrlParser: true });
+mongoose.connect('mongodb+srv://robi:Test5ers!@cluster0-1xydf.mongodb.net/userDB', { useNewUrlParser: true });
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function () {
